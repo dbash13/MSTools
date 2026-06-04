@@ -16,7 +16,9 @@
         IE: https://copilotstudio.microsoft.com/environments/123456b3-a333-e343-9bca-0c04cb1cfc45/bots/<<d773ee3a-5257-f011-877b-7c1e522a014e>>
 
     .PARAMETER NewOwnerEntraId
-        User ID from Microsoft EntraID user to assign the agent. Can be obtained from Azure portal or cmdlet Get-AzAdUser
+        User ID from Microsoft EntraID user to assign the agent. Can be obtained from Azure portal or cmdlet Get-AzAdUser.
+        IE:
+            - $entraUserId = Connect-AzAccount ; (Get-AzAdUser -UserPrincipalName "someUser@domain.net").Id
     
     .EXAMPLE
          .\ms-copilot-agent_changue_ownership.ps1 -EnvironmentId "123456b3-a333-e343-9bca-0c04cb1cfc45" `
