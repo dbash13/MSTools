@@ -1,0 +1,3 @@
+[submodule "PowerShell/Modules/MultiModules"]
+	path = PowerShell/Modules/MultiModules
+	url = https://github.com/dbash13/MultiModules
