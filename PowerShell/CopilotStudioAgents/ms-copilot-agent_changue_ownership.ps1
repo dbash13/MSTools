@@ -61,7 +61,7 @@ $tokenSecure = (Get-AzAccessToken -ResourceUrl "https://api.powerplatform.com").
 
 $accessToken = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto(
     [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($tokenSecure)
-)
+) #If pwsh +7 can be used ConvertFrom-SecureString -AsPlainText...
 
 
 $uri = "https://api.powerplatform.com/copilotstudio/environments/$EnvironmentId/bots/$BotId/api/botAdminOperations/reassign?api-version=1"
